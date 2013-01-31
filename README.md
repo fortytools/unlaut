@@ -1,6 +1,6 @@
 # Unlaut
 
-Adds  a 'to_i18n' method to a String, providing you with an accent and umlaut free version of it.
+Adds  a 'no_i18n' method to String, providing you with an accent and umlaut free version of it.
 
 
 ## Installation
@@ -19,14 +19,14 @@ Or install it yourself as:
 
 ## Rails
 
-You have to require the lib at startup to actually get the *to_i18n* method. You can add an initializer to
+You have to require the lib at startup to actually get the *no_i18n* method. You can add an initializer to
     
     config/initializers/unlaut.rb
 
 where you then als can add own replacements:
 
     require 'unlaut'
-    # loads the unlaut gem which adds a to_i18n method to strings to replace umlauts
+    # loads the unlaut gem which adds a no_i18n method to strings to replace umlauts
     
     # Unlaut::Map.replace 'x', 'y'
 

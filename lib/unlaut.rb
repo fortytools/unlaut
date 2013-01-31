@@ -43,7 +43,7 @@ module Unlaut
 end
  
 class String
-  def to_i18n
+  def no_i18n
     Unlaut::Map.execute(self)
   end
 end

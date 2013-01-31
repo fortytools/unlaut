@@ -4,6 +4,6 @@ require "test/unit"
  
 class TestUnlaut < Test::Unit::TestCase
   def test_basics
-    assert_equal 'Gruss Gott, das musste klappen',  'Grüß Gott, das müsste klappen'.to_i18n
+    assert_equal 'Gruss Gott, das musste klappen',  'Grüß Gott, das müsste klappen'.no_i18n
   end
 end
