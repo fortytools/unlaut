@@ -1,6 +1,6 @@
 # Unlaut
 
-TODO: Write a gem description
+
 
 ## Installation
 
@@ -16,9 +16,17 @@ Or install it yourself as:
 
     $ gem install unlaut
 
-## Usage
+## Rails
 
-TODO: Write usage instructions here
+You have to require the lib at startup to actually get the *to_i18n* method. You can add an initializer to
+    config/initializers/unlaut.rb
+
+where you then als can add own replacements:
+
+   require 'unlaut'
+   # loads the unlaut gem which adds a to_i18n method to strings to replace umlauts
+   
+   # Unlaut::Map.replace 'x', 'y'
 
 ## Contributing
 
