@@ -2,6 +2,14 @@
 
 Adds  a 'no_i18n' method to String, providing you with an accent and umlaut free version of it.
 
+    # Example:
+    irb(main):011:0> 'Hellö, Mr. Présidente'.no_i18n
+    => "Hello, Mr. Presidente"
+    
+    # Replacements can be configured
+    irb(main):012:0> Unlaut::Map.replace 'aeiuo', 'x'
+    irb(main):013:0> 'I hate vowels'.no_i18n
+    => "I hxtx vxwxls"
 
 ## Installation
 
