@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "unlaut"
-  gem.version       = '0.1'
+  gem.version       = '0.2'
   gem.authors       = ["Axel Tetzlaff"]
   gem.email         = ["axel.tetzlaff@fortytools.com"]
   gem.description   = %q{Replace umlauts and other unwanted chars in strings}
